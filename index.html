@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            overflow: hidden;
+        }
+
+        div {
+            float: left;
+            margin-left: 3px;
+        }
+
+        .dotted {
+            height: 100px;
+            width: 100px;
+            background-color: wheat;
+            border-width: 5px;
+            border-style: dotted;
+        }
+
+        .dashed {
+            height: 100px;
+            width: 100px;
+            background-color: aquamarine;
+            border-width: 5px;
+            border-style: dashed;
+        }
+
+        .double {
+            height: 100px;
+            width: 100px;
+            background-color: bisque;
+            border-width: 5px;
+            border-style: double;
+        }
+
+        .groove {
+            height: 100px;
+            width: 100px;
+            background-color: burlywood;
+            border-width: 5px;
+            border-style: groove;
+        }
+
+        .ridge {
+            height: 100px;
+            width: 100px;
+            background-color: cadetblue;
+            border-width: 5px;
+            border-style: ridge;
+        }
+
+        .inset {
+            height: 100px;
+            width: 100px;
+            background-color: beige;
+            border-width: 5px;
+            border-style: inset;
+        }
+
+        .outset {
+            height: 100px;
+            width: 100px;
+            background-color: cornflowerblue;
+            border-width: 5px;
+            border-style: outset;
+        }
+
+        .profile {
+            height: 100px;
+            width: 100px;
+            /* ilk yazdığım width, ikinci: style, ucuncu: color */
+            border: 5px double black;
+            border-radius: 50%;
+        }
+
+        .profile img {
+            width: 100%;
+            height: 100%;
+        }
+
+        #tuhaf {
+            width: 100px;
+            height: 100px;
+            background-color: azure;
+            border-width: 5px;
+            /* Left border */
+            border-left-style: dashed;
+            border-left-color: purple;
+            border-left-width: 10px;
+
+            /* top border */
+            border-top-left-radius: 20px;
+            border-top-width: 6px;
+            border-top-color: aquamarine;
+            border-top-style: dotted;
+            border-top-right-radius: 50%;
+
+            /* right border */
+            border-right-style: double;
+            border-right-color: brown;
+            border-right-width: 10px;
+
+            /* bottom border */
+            border-bottom-right-radius: 12px;
+            border-bottom-left-radius: 45px;
+            border-bottom-color: palevioletred;
+            border-bottom-width: 70px;
+            border-bottom-style: groove;
+        }
+
+        #tuhaf img {
+            width: 100%;
+            height: 100%;
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- alt + shift + f = html sayfamı düzenler -->
+
+    <div class="dotted"></div>
+    <div class="dashed"></div>
+    <div class="double"></div>
+    <!-- groove ve ridge birbiriniz zıttı -->
+    <div class="groove"></div>
+    <div class="ridge"></div>
+    <div class="inset"></div>
+    <div class="outset"></div>
+    <div class="profile">
+        <img src="https://media.istockphoto.com/id/1300512215/photo/headshot-portrait-of-smiling-ethnic-businessman-in-office.jpg?s=612x612&w=0&k=20&c=QjebAlXBgee05B3rcLDAtOaMtmdLjtZ5Yg9IJoiy-VY="
+            alt="">
+    </div>
+
+    <!-- div her bir köşemin stili farklı olsun -->
+
+    <div id="tuhaf">
+        <!-- <img src="https://picsum.photos/200/300" alt=""> -->
+        <img src="https://picsum.photos/id/237/200/300" alt="">
+    </div>
+
+</body>
+
+</html>
