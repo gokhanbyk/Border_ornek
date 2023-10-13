@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablolar</title>
+    <!-- Internal -->
+    <style>
+
+        /* birden fazla secici seçebiliyoruz */
+        table, th, td {
+            border: 1px solid white;
+            color: white;
+        }
+
+        table {
+            background-image: url(https://picsum.photos/id/237/200/300);
+            background-size: cover;
+            background-position: center;
+        }
+
+
+        /* 
+        first-child = ilk eleman
+        nth-child(x) = x e ne dersek o elemana gider
+        last-child = en son elamanımı görür
+        */
+        table tr:first-child :nth-child(2){
+            color: white;
+            background-color: red;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>Tablomuz</h1>
+    <table>
+        <tr>
+            <th>İsim</th>
+            <th>Soyisim</th>
+            <th>Şehir</th>
+        </tr>
+        <tr>
+            <td>Gökhan</td>
+            <td>Biyikoğlu</td>
+            <td>Bursa</td>
+        </tr>
+        <tr>
+            <td>Soner</td>
+            <td>Hekimoğlu</td>
+            <td>Kütahya</td>
+        </tr>
+    </table>
+    
+</body>
+</html>
